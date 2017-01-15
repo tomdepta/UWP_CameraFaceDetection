@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Cam_FaceDetection.Views.FaceDetectionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Cam_FaceDetection.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <CaptureElement x:Name="CameraPreview"
+               HorizontalAlignment="Center" 
+               Height="480" 
+               VerticalAlignment="Top" 
+               Width="640"/>
+        <Canvas x:Name="FacesCanvas" 
+                Width="640" 
+                Height="480" 
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Center"/>
+
+        <Border HorizontalAlignment="Left" 
+                VerticalAlignment="Bottom" 
+                Background="Aqua">
+            <TextBlock x:Name="FpsTextBlock" 
+                   TextWrapping="Wrap" 
+                   Text="TextBlock" 
+                   FontSize="14"/>
+        </Border>
+    </Grid>
+</Page>
