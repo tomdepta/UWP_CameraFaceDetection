@@ -29,7 +29,7 @@ namespace Cam_FaceDetection.Logic
             HaarCascade cascade = await FaceHaarCascade.GetInstance();
             _detector = new HaarObjectDetector(
                 cascade,
-                25,
+                18,
                 ObjectDetectorSearchMode.NoOverlap,
                 1.2f,
                 ObjectDetectorScalingMode.SmallerToGreater)
